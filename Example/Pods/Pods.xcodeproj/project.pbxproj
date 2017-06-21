@@ -1,0 +1,570 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AA96A1F3FE13BC1EF6117C2DEC042C4 /* HydraKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B6E820235D3D1D7BF7D3EFE9D2DEB91 /* HydraKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		468A90473A0DA726EE3FC4496D89373F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		53FE84995C46925068D0872B3B874664 /* Pods-HydraKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64B309AB83684BFFBC2B44411B522C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A1166FA59E7E99708B8EDF0F0B0D2AD7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */; };
+		A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */; };
+		CF4DC9B4871A7220E97708E305E71ED8 /* Pods-HydraKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6103044EF4E31C7125BA40E59FCD3996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D79FD38B9DB9E3CBF8DF8481B2484D0;
+			remoteInfo = HydraKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025AB51761153C225F7B7CB66B33A4F3 /* Pods-HydraKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HydraKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1DBD343794910DB353EFBF296B4CA3CF /* HydraKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HydraKit.xcconfig; sourceTree = "<group>"; };
+		2A1DD4CFC900903EC3728509F3176004 /* Pods-HydraKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HydraKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HydraKit-dummy.m"; sourceTree = "<group>"; };
+		487B3E03155B0DC745912AD0A8CED10A /* Pods-HydraKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HydraKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		491830CF8E5E150DF29A3E7DB78939CD /* HydraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HydraKit.framework; path = HydraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B6E820235D3D1D7BF7D3EFE9D2DEB91 /* HydraKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HydraKit-umbrella.h"; sourceTree = "<group>"; };
+		4E7F45DF604DD7CFD21FA33A4D200E4C /* Pods_HydraKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HydraKit_Tests.framework; path = "Pods-HydraKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		704D6747BC97EE540129BF34F92F9DD6 /* Pods-HydraKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HydraKit_Tests.modulemap"; sourceTree = "<group>"; };
+		7693E37953949D8519459D410F9BDE5D /* HydraKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HydraKit.modulemap; sourceTree = "<group>"; };
+		797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		7EBE765903A6A0DA57AB5A6AD9CA8FCE /* Pods-HydraKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HydraKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CF7209BF071F2EA021A4FBC2967A437 /* Pods-HydraKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HydraKit_Tests-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B9A867F198F274B43A504A1B23FB602 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HydraKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HydraKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		DFFA01DCBD7B8F9EAA61BBC87F4BA650 /* HydraKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HydraKit-prefix.pch"; sourceTree = "<group>"; };
+		E051FBD51272592FDDA8F19B25A0ED3A /* Pods-HydraKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HydraKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F966AD742D3511CB988AF34BCB3961C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31950FC7B76CE90E49F43CDC63964D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468A90473A0DA726EE3FC4496D89373F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D61D5A7FF69258FE4838AB53403DB1F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64B309AB83684BFFBC2B44411B522C9C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2222B9602C608C20331ABDC909FD4AFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491830CF8E5E150DF29A3E7DB78939CD /* HydraKit.framework */,
+				4E7F45DF604DD7CFD21FA33A4D200E4C /* Pods_HydraKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30C847398609A5D78F45C527C3C91F88 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBE475E076BD4DBA0B2F2CD7B7C0E058 /* HydraKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		33F84D39AA03C3D6D58ED662C0B4A288 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				30C847398609A5D78F45C527C3C91F88 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2222B9602C608C20331ABDC909FD4AFB /* Products */,
+				A75167BFE2A5F38AB0B92D7C7DB0FB2D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A299A4C7DBEEF81ADF750DFC09B351C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7693E37953949D8519459D410F9BDE5D /* HydraKit.modulemap */,
+				1DBD343794910DB353EFBF296B4CA3CF /* HydraKit.xcconfig */,
+				3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */,
+				DFFA01DCBD7B8F9EAA61BBC87F4BA650 /* HydraKit-prefix.pch */,
+				4B6E820235D3D1D7BF7D3EFE9D2DEB91 /* HydraKit-umbrella.h */,
+				9B9A867F198F274B43A504A1B23FB602 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HydraKit";
+			sourceTree = "<group>";
+		};
+		A75167BFE2A5F38AB0B92D7C7DB0FB2D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F943471D3D744527878E486EF69FD30F /* Pods-HydraKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A9E1381216A8036DFD377CB1095706B3 /* HydraKit */ = {
+			isa = PBXGroup;
+			children = (
+				33F84D39AA03C3D6D58ED662C0B4A288 /* Classes */,
+			);
+			name = HydraKit;
+			path = HydraKit;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EBE475E076BD4DBA0B2F2CD7B7C0E058 /* HydraKit */ = {
+			isa = PBXGroup;
+			children = (
+				A9E1381216A8036DFD377CB1095706B3 /* HydraKit */,
+				8A299A4C7DBEEF81ADF750DFC09B351C /* Support Files */,
+			);
+			name = HydraKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F943471D3D744527878E486EF69FD30F /* Pods-HydraKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F966AD742D3511CB988AF34BCB3961C4 /* Info.plist */,
+				704D6747BC97EE540129BF34F92F9DD6 /* Pods-HydraKit_Tests.modulemap */,
+				2A1DD4CFC900903EC3728509F3176004 /* Pods-HydraKit_Tests-acknowledgements.markdown */,
+				025AB51761153C225F7B7CB66B33A4F3 /* Pods-HydraKit_Tests-acknowledgements.plist */,
+				9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */,
+				E051FBD51272592FDDA8F19B25A0ED3A /* Pods-HydraKit_Tests-frameworks.sh */,
+				8CF7209BF071F2EA021A4FBC2967A437 /* Pods-HydraKit_Tests-resources.sh */,
+				DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */,
+				7EBE765903A6A0DA57AB5A6AD9CA8FCE /* Pods-HydraKit_Tests.debug.xcconfig */,
+				487B3E03155B0DC745912AD0A8CED10A /* Pods-HydraKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-HydraKit_Tests";
+			path = "Target Support Files/Pods-HydraKit_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		92E3E9052448685B047678882932BBD4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FE84995C46925068D0872B3B874664 /* Pods-HydraKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF2FF0CC8D306F23153B663727533289 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AA96A1F3FE13BC1EF6117C2DEC042C4 /* HydraKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		021EE606D92DB293CFC655A754FFE411 /* Pods-HydraKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C0ACEBF6323F4155C35F45B28916C83 /* Build configuration list for PBXNativeTarget "Pods-HydraKit_Tests" */;
+			buildPhases = (
+				233D7B7125BB3F8D808AED311B5609D4 /* Sources */,
+				31950FC7B76CE90E49F43CDC63964D13 /* Frameworks */,
+				92E3E9052448685B047678882932BBD4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E95426970E8FA48B12313B1FACE595 /* PBXTargetDependency */,
+			);
+			name = "Pods-HydraKit_Tests";
+			productName = "Pods-HydraKit_Tests";
+			productReference = 4E7F45DF604DD7CFD21FA33A4D200E4C /* Pods_HydraKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D79FD38B9DB9E3CBF8DF8481B2484D0 /* HydraKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824679A4E2E2A631673B1F4E3BE562F9 /* Build configuration list for PBXNativeTarget "HydraKit" */;
+			buildPhases = (
+				FCF78FA3D90EDC852DA1501C25C0B93E /* Sources */,
+				D61D5A7FF69258FE4838AB53403DB1F9 /* Frameworks */,
+				AF2FF0CC8D306F23153B663727533289 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HydraKit;
+			productName = HydraKit;
+			productReference = 491830CF8E5E150DF29A3E7DB78939CD /* HydraKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 2222B9602C608C20331ABDC909FD4AFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D79FD38B9DB9E3CBF8DF8481B2484D0 /* HydraKit */,
+				021EE606D92DB293CFC655A754FFE411 /* Pods-HydraKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		233D7B7125BB3F8D808AED311B5609D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4DC9B4871A7220E97708E305E71ED8 /* Pods-HydraKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF78FA3D90EDC852DA1501C25C0B93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */,
+				A1166FA59E7E99708B8EDF0F0B0D2AD7 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0E95426970E8FA48B12313B1FACE595 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HydraKit;
+			target = 5D79FD38B9DB9E3CBF8DF8481B2484D0 /* HydraKit */;
+			targetProxy = 6103044EF4E31C7125BA40E59FCD3996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		110D7261066292EFE67ED2D194E90605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBD343794910DB353EFBF296B4CA3CF /* HydraKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HydraKit/HydraKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HydraKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HydraKit/HydraKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HydraKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1BADB1EA380FB80B2B89000E4A6C62E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBE765903A6A0DA57AB5A6AD9CA8FCE /* Pods-HydraKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HydraKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HydraKit_Tests/Pods-HydraKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HydraKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBB0D19EFA47DC85C8957241C673013F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 487B3E03155B0DC745912AD0A8CED10A /* Pods-HydraKit_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HydraKit_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HydraKit_Tests/Pods-HydraKit_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HydraKit_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7C279B8B31275AA6A13AD1993B1FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBD343794910DB353EFBF296B4CA3CF /* HydraKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HydraKit/HydraKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HydraKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HydraKit/HydraKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HydraKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824679A4E2E2A631673B1F4E3BE562F9 /* Build configuration list for PBXNativeTarget "HydraKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7C279B8B31275AA6A13AD1993B1FE6 /* Debug */,
+				110D7261066292EFE67ED2D194E90605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C0ACEBF6323F4155C35F45B28916C83 /* Build configuration list for PBXNativeTarget "Pods-HydraKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BADB1EA380FB80B2B89000E4A6C62E2 /* Debug */,
+				BBB0D19EFA47DC85C8957241C673013F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

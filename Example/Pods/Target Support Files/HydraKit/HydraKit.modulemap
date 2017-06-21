@@ -1,0 +1,6 @@
+framework module HydraKit {
+  umbrella header "HydraKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

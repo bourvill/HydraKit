@@ -1,0 +1,16 @@
+PODS:
+  - HydraKit (0.1.0)
+
+DEPENDENCIES:
+  - HydraKit (from `../`)
+
+EXTERNAL SOURCES:
+  HydraKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HydraKit: d5b97c55c154dcb1f3a8db832c827e6589310059
+
+PODFILE CHECKSUM: f108a15ceb80e85b921781272d306f7ea68019c9
+
+COCOAPODS: 1.2.0
