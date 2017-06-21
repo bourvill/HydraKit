@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HydraKit_Tests' do
+  pod 'HydraKit', :path => '../'
+  
+  
+end
