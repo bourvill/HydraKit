@@ -11,7 +11,9 @@
 		468A90473A0DA726EE3FC4496D89373F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		53FE84995C46925068D0872B3B874664 /* Pods-HydraKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64B309AB83684BFFBC2B44411B522C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A1166FA59E7E99708B8EDF0F0B0D2AD7 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */; };
+		9C693A951EFAE300009D2115 /* HydraObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C693A941EFAE300009D2115 /* HydraObject.swift */; };
+		9C693A971EFAE928009D2115 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */; };
+		A1166FA59E7E99708B8EDF0F0B0D2AD7 /* Hydra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797413D1B806B582A802478CCEDC054A /* Hydra.swift */; };
 		A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */; };
 		CF4DC9B4871A7220E97708E305E71ED8 /* Pods-HydraKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -32,17 +34,19 @@
 		2A1DD4CFC900903EC3728509F3176004 /* Pods-HydraKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HydraKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HydraKit-dummy.m"; sourceTree = "<group>"; };
 		487B3E03155B0DC745912AD0A8CED10A /* Pods-HydraKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HydraKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		491830CF8E5E150DF29A3E7DB78939CD /* HydraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HydraKit.framework; path = HydraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		491830CF8E5E150DF29A3E7DB78939CD /* HydraKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HydraKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B6E820235D3D1D7BF7D3EFE9D2DEB91 /* HydraKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HydraKit-umbrella.h"; sourceTree = "<group>"; };
-		4E7F45DF604DD7CFD21FA33A4D200E4C /* Pods_HydraKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HydraKit_Tests.framework; path = "Pods-HydraKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E7F45DF604DD7CFD21FA33A4D200E4C /* Pods_HydraKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HydraKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		704D6747BC97EE540129BF34F92F9DD6 /* Pods-HydraKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HydraKit_Tests.modulemap"; sourceTree = "<group>"; };
-		7693E37953949D8519459D410F9BDE5D /* HydraKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = HydraKit.modulemap; sourceTree = "<group>"; };
-		797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		704D6747BC97EE540129BF34F92F9DD6 /* Pods-HydraKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HydraKit_Tests.modulemap"; sourceTree = "<group>"; };
+		7693E37953949D8519459D410F9BDE5D /* HydraKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HydraKit.modulemap; sourceTree = "<group>"; };
+		797413D1B806B582A802478CCEDC054A /* Hydra.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hydra.swift; sourceTree = "<group>"; };
 		7EBE765903A6A0DA57AB5A6AD9CA8FCE /* Pods-HydraKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HydraKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8CF7209BF071F2EA021A4FBC2967A437 /* Pods-HydraKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HydraKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B9A867F198F274B43A504A1B23FB602 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C693A941EFAE300009D2115 /* HydraObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydraObject.swift; sourceTree = "<group>"; };
+		9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HydraKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HydraKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DFFA01DCBD7B8F9EAA61BBC87F4BA650 /* HydraKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HydraKit-prefix.pch"; sourceTree = "<group>"; };
@@ -90,9 +94,10 @@
 		33F84D39AA03C3D6D58ED662C0B4A288 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				797413D1B806B582A802478CCEDC054A /* ReplaceMe.swift */,
+				797413D1B806B582A802478CCEDC054A /* Hydra.swift */,
+				9C693A941EFAE300009D2115 /* HydraObject.swift */,
+				9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -134,7 +139,6 @@
 			children = (
 				33F84D39AA03C3D6D58ED662C0B4A288 /* Classes */,
 			);
-			name = HydraKit;
 			path = HydraKit;
 			sourceTree = "<group>";
 		};
@@ -279,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C693A971EFAE928009D2115 /* URLSessionProtocol.swift in Sources */,
+				9C693A951EFAE300009D2115 /* HydraObject.swift in Sources */,
 				A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */,
-				A1166FA59E7E99708B8EDF0F0B0D2AD7 /* ReplaceMe.swift in Sources */,
+				A1166FA59E7E99708B8EDF0F0B0D2AD7 /* Hydra.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

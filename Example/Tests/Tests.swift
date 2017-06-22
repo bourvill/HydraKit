@@ -1,29 +1,28 @@
 import UIKit
 import XCTest
-import HydraKit
+@testable import HydraKit
 
-class Tests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+class HydraTests: XCTestCase {
+    func testHydraGetWithSuccess() {
+        let session = MockURLSession()
+        let dataTask = Task()
+        session.nextDataTask = dataTask
+        session.nextData = "{\"hydra:member\":[{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}]}".data(using: .utf8)
+        let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
+
+        hydra.get(HydraObj.self) { results in
+
+            switch results {
+            case .success(let results):
+                XCTAssertEqual(results.count, 1)
+                XCTAssertEqual(results.first?.hydraId, "/api/hydraObjs/7508")
+            case .failure(_):
+                //never call
+                XCTAssertTrue(false)
+            }
         }
+
+        XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs?")
+        XCTAssertTrue(dataTask.resumeCall)
     }
-    
 }
