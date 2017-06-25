@@ -22,7 +22,7 @@ public class Hydra {
         var urlComponents = URLComponents(string: endpoint + hydraObject.hydraPoint())
         urlComponents?.queryItems = []
         for (key,value) in parameters {
-            urlComponents?.queryItems?.append(URLQueryItem(name: key, value: (value as! String)))
+            urlComponents?.queryItems?.append(URLQueryItem(name: key, value: (String(describing: value))))
         }
         let task = urlSession.dataTask(with: urlComponents!.url!) { data, response, error in
             guard error == nil else {
