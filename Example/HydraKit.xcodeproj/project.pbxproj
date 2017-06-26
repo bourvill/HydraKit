@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* HydraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* HydraTests.swift */; };
 		9C693A991EFAFCF4009D2115 /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C693A981EFAFCF4009D2115 /* Stub.swift */; };
+		9CFD34521F01BA2400E3C7F1 /* Hydra+PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFD34511F01BA2400E3C7F1 /* Hydra+PostTests.swift */; };
 		E5E924C2BC31B23A9236C54A /* Pods_HydraKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1738779E19D02EC39ACED4FB /* Pods_HydraKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* HydraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydraTests.swift; sourceTree = "<group>"; };
 		9C693A981EFAFCF4009D2115 /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		9CFD34511F01BA2400E3C7F1 /* Hydra+PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hydra+PostTests.swift"; sourceTree = "<group>"; };
 		9E24CA8E166A5AB9B5C91629 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A16DA824D90EB641012C4E25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C8BB6B47D6D2FC27882EB4BE /* HydraKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HydraKit.podspec; path = ../HydraKit.podspec; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* HydraTests.swift */,
+				9CFD34511F01BA2400E3C7F1 /* Hydra+PostTests.swift */,
 				9C693A981EFAFCF4009D2115 /* Stub.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* HydraTests.swift in Sources */,
+				9CFD34521F01BA2400E3C7F1 /* Hydra+PostTests.swift in Sources */,
 				9C693A991EFAFCF4009D2115 /* Stub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
