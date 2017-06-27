@@ -51,3 +51,7 @@ class MockURLSession: URLSessionProtocol {
     }
 }
 
+
+enum MockError: Error {
+    case invalid(String)
+}

@@ -15,9 +15,9 @@ extension Hydra {
         request.httpMethod = URLRequest.httpMethod.POST.rawValue
         request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
         
-        let task = urlSession.dataTask(with: request) { data, response, error in
+        urlSession.dataTask(with: request) { data, response, error in
             guard error == nil else {
-                print(error!)
+                completion(Result.failure(error!))
                 return
             }
             guard let data = data else {
@@ -31,7 +31,6 @@ extension Hydra {
             } catch let errorjson {
                 print(errorjson)
             }
-        }
-        task.resume()
+        }.resume()
     }
 }

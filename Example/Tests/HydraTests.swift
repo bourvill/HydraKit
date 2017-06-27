@@ -79,4 +79,54 @@ class HydraTests: XCTestCase {
         XCTAssertTrue(dataTask.resumeCall)
         waitForExpectations(timeout: 5, handler: nil)
     }
+
+    func testHydraGetError() {
+        let session = MockURLSession()
+        let dataTask = Task()
+        session.nextDataTask = dataTask
+        session.nextError = MockError.invalid("Invalid")
+
+        //session.nextData = "{\"hydra:member\":[{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}]}".data(using: .utf8)
+        let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
+
+        let expect = expectation(description: "Get completion")
+
+        hydra.get(HydraObj.self) { results in
+            expect.fulfill()
+            switch results {
+            case .success(_):
+                //never call
+                XCTAssertTrue(false)
+            case .failure(let error):
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (HydraKit_Tests.MockError error 0.)")
+            }
+        }
+
+        XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs?")
+        XCTAssertTrue(dataTask.resumeCall)
+        waitForExpectations(timeout: 5, handler: nil)
+    }
+
+    func testHydraGetWithoutDataError() {
+        let session = MockURLSession()
+        let dataTask = Task()
+        session.nextDataTask = dataTask
+        let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
+        let expect = expectation(description: "Get completion")
+
+        hydra.get(HydraObj.self) { results in
+            expect.fulfill()
+            switch results {
+            case .success(_):
+                //never call
+                XCTAssertTrue(false)
+            case .failure(let error):
+                XCTAssertEqual(error.localizedDescription, "The operation couldn’t be completed. (HydraKit.HydraError error 0.)")
+            }
+        }
+
+        XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs?")
+        XCTAssertTrue(dataTask.resumeCall)
+        waitForExpectations(timeout: 5, handler: nil)
+    }
 }

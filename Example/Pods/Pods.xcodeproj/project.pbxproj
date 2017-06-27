@@ -15,6 +15,7 @@
 		9C6616531F012C12002EB0A3 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6616521F012C12002EB0A3 /* URLRequest.swift */; };
 		9C693A951EFAE300009D2115 /* HydraObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C693A941EFAE300009D2115 /* HydraObject.swift */; };
 		9C693A971EFAE928009D2115 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */; };
+		9CA416B51F027E7E006FC26B /* HydraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA416B41F027E7E006FC26B /* HydraError.swift */; };
 		A1166FA59E7E99708B8EDF0F0B0D2AD7 /* Hydra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797413D1B806B582A802478CCEDC054A /* Hydra.swift */; };
 		A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FA21E28DCEE466B095168D985EC1D5D /* HydraKit-dummy.m */; };
 		CF4DC9B4871A7220E97708E305E71ED8 /* Pods-HydraKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */; };
@@ -51,6 +52,7 @@
 		9C6616521F012C12002EB0A3 /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		9C693A941EFAE300009D2115 /* HydraObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydraObject.swift; sourceTree = "<group>"; };
 		9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		9CA416B41F027E7E006FC26B /* HydraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydraError.swift; sourceTree = "<group>"; };
 		9E340416BDC2BE4E60BE5845C3CAD7AE /* Pods-HydraKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HydraKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB69B55F094A029A52B81B9D7DD297BB /* Pods-HydraKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HydraKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		DFFA01DCBD7B8F9EAA61BBC87F4BA650 /* HydraKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HydraKit-prefix.pch"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				9C693A941EFAE300009D2115 /* HydraObject.swift */,
 				9C693A961EFAE928009D2115 /* URLSessionProtocol.swift */,
 				9C6616521F012C12002EB0A3 /* URLRequest.swift */,
+				9CA416B41F027E7E006FC26B /* HydraError.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				9C693A971EFAE928009D2115 /* URLSessionProtocol.swift in Sources */,
 				9C693A951EFAE300009D2115 /* HydraObject.swift in Sources */,
 				A9F4A5F5901FE800DB9D830FFCE1364D /* HydraKit-dummy.m in Sources */,
+				9CA416B51F027E7E006FC26B /* HydraError.swift in Sources */,
 				9C6616531F012C12002EB0A3 /* URLRequest.swift in Sources */,
 				9C6616511F012AB5002EB0A3 /* Hydra+Post.swift in Sources */,
 				A1166FA59E7E99708B8EDF0F0B0D2AD7 /* Hydra.swift in Sources */,

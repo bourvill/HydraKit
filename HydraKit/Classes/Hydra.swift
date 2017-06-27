@@ -24,12 +24,13 @@ public class Hydra {
         for (key,value) in parameters {
             urlComponents?.queryItems?.append(URLQueryItem(name: key, value: (String(describing: value))))
         }
-        let task = urlSession.dataTask(with: urlComponents!.url!) { data, response, error in
+        urlSession.dataTask(with: urlComponents!.url!) { data, response, error in
             guard error == nil else {
-                print(error!)
+                completion(Result.failure(error!))
                 return
             }
             guard let data = data else {
+                completion(Result.failure(HydraError.emptyData))
                 print("Data is empty")
                 return
             }
@@ -44,16 +45,15 @@ public class Hydra {
             } catch let errorjson {
                 print(errorjson)
             }
-        }
-
-        task.resume()
+        }.resume()
     }
 
     public func get<T:HydraObject>(_ hydraObject:T.Type, id: Int,  completion: @escaping (Result<T>) -> ()) {
         let url = URL(string: endpoint + hydraObject.hydraPoint() + "/" + String(id))
-        let task = urlSession.dataTask(with: url!) { data, response, error in
+
+        urlSession.dataTask(with: url!) { data, response, error in
             guard error == nil else {
-                print(error!)
+                completion(Result.failure(error!))
                 return
             }
             guard let data = data else {
@@ -69,8 +69,6 @@ public class Hydra {
                 completion(Result.failure(errorjson))
                 print(errorjson)
             }
-        }
-
-        task.resume()
+        }.resume()
     }
 }
