@@ -34,6 +34,7 @@ class MockURLSession: URLSessionProtocol {
     var nextData: Data?
     var nextError: Error?
     var lastMethod: String = "GET"
+    var lastBody: Data?
 
     func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Swift.Void) -> URLSessionDataTask {
         lastURL = url
@@ -44,6 +45,7 @@ class MockURLSession: URLSessionProtocol {
     func dataTask(with request: URLRequest, completionHandler: @escaping DataTaskResult) -> URLSessionDataTask {
         lastURL = request.url!
         lastMethod = request.httpMethod!
+        lastBody = request.httpBody
         completionHandler(nextData, nil, nextError)
         return nextDataTask
     }
