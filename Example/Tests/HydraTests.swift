@@ -10,8 +10,10 @@ class HydraTests: XCTestCase {
         session.nextData = "{\"hydra:member\":[{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}]}".data(using: .utf8)
         let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
 
-        hydra.get(HydraObj.self) { results in
+        let expect = expectation(description: "Get completion")
 
+        hydra.get(HydraObj.self) { results in
+            expect.fulfill()
             switch results {
             case .success(let results):
                 XCTAssertEqual(results.count, 1)
@@ -24,6 +26,7 @@ class HydraTests: XCTestCase {
 
         XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs?")
         XCTAssertTrue(dataTask.resumeCall)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testHydraGetWithParametersSuccess() {
@@ -33,7 +36,10 @@ class HydraTests: XCTestCase {
         session.nextData = "{\"hydra:member\":[{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}]}".data(using: .utf8)
         let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
 
+        let expect = expectation(description: "Get completion")
+
         hydra.get(HydraObj.self, parameters: ["name": "myTest", "note": 3, "extra": "my extra arg"]) { results in
+            expect.fulfill()
             switch results {
             case .success(let results):
                 XCTAssertEqual(results.count, 1)
@@ -46,6 +52,7 @@ class HydraTests: XCTestCase {
 
         XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs?name=myTest&note=3&extra=my%20extra%20arg")
         XCTAssertTrue(dataTask.resumeCall)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 
     func testHydraGetIdSuccess() {
@@ -55,7 +62,10 @@ class HydraTests: XCTestCase {
         session.nextData = "{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}".data(using: .utf8)
         let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
 
+        let expect = expectation(description: "Get completion")
+
         hydra.get(HydraObj.self, id: 7508) { results in
+            expect.fulfill()
             switch results {
             case .success(let results):
                 XCTAssertEqual(results.hydraId, "/api/hydraObjs/7508")
@@ -67,5 +77,6 @@ class HydraTests: XCTestCase {
 
         XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs/7508")
         XCTAssertTrue(dataTask.resumeCall)
+        waitForExpectations(timeout: 5, handler: nil)
     }
 }
