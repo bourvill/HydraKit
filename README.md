@@ -1,6 +1,6 @@
 # HydraKit
 
-[![CI Status](http://img.shields.io/travis/Maxime/HydraKit.svg?style=flat)](https://travis-ci.org/Maxime/HydraKit)
+[![CI Status](http://img.shields.io/travis/bourvill/HydraKit.svg?style=flat)](https://travis-ci.org/bourvill/HydraKit)
 [![Version](https://img.shields.io/cocoapods/v/HydraKit.svg?style=flat)](http://cocoapods.org/pods/HydraKit)
 [![License](https://img.shields.io/cocoapods/l/HydraKit.svg?style=flat)](http://cocoapods.org/pods/HydraKit)
 [![Platform](https://img.shields.io/cocoapods/p/HydraKit.svg?style=flat)](http://cocoapods.org/pods/HydraKit)
