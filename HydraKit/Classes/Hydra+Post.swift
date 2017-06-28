@@ -4,11 +4,17 @@
 //
 //  Created by maxime marinel on 26/06/2017.
 //
-
 import Foundation
 
 extension Hydra {
-    func post<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> ()) {
+    /**
+     Post resource
+
+     - Parameter hydraObject: an object Type conform to protocol HydraObject
+     - Parameter parameters: dictonary needed to create resource
+     - Parameter completion: Result from task
+     */
+    public func post<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> ()) {
         let url = URL(string: endpoint + hydraObject.hydraPoint())
         
         var request: URLRequest = URLRequest(url: url!)

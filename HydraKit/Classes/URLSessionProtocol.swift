@@ -4,6 +4,8 @@
 //
 //  Created by maxime marinel on 21/06/2017.
 //
+import Foundation
+
 public typealias DataTaskResult = (Data?, URLResponse?, Error?) -> Void
 
 public protocol URLSessionProtocol {

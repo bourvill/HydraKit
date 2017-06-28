@@ -1,0 +1,61 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/Hydra.swift",
+      "line": null,
+      "symbol": "Hydra",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/Hydra.swift",
+      "line": 9,
+      "symbol": "Hydra",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/Hydra.swift",
+      "line": 17,
+      "symbol": "Hydra.Result.success",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/Hydra.swift",
+      "line": 18,
+      "symbol": "Hydra.Result.failure",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/HydraObject.swift",
+      "line": 13,
+      "symbol": "HydraObject.hydraId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/URLSessionProtocol.swift",
+      "line": 9,
+      "symbol": "URLSessionProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/URLSessionProtocol.swift",
+      "line": 10,
+      "symbol": "URLSessionProtocol.dataTask(with:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/maxime/project/HydraKit/HydraKit/Classes/URLSessionProtocol.swift",
+      "line": 11,
+      "symbol": "URLSessionProtocol.dataTask(with:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/maxime/project/HydraKit"
+}

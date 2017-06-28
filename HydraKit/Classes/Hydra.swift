@@ -1,23 +1,55 @@
+//
+//  Hydra.swift
+//  HydraKit
+//
+//  Created by maxime marinel on 26/06/2017.
+//
+import Foundation
 
 public class Hydra {
 
+    /**
+     Encapsulate result
+     - success: return the T
+     - failure: return error
+     */
     public enum Result<T> {
         case success(T)
         case failure(Error)
     }
 
+    /// endpoint url
     let endpoint: String
+    /// session for task
     let urlSession: URLSessionProtocol
 
+    /**
+     Create a new hydra query manager
+
+     - Parameter endpoint: The string endpoint
+     - Parameter urlSession: urlSession needed for task
+     */
     public init(endpoint: String, urlSession: URLSessionProtocol) {
         self.endpoint = endpoint
         self.urlSession = urlSession
     }
 
+    /**
+     Create a new hydra query manager
+
+     - Parameter endpoint: The string endpoint
+     */
     public convenience init (endpoint: String) {
         self.init(endpoint: endpoint, urlSession: URLSession.shared)
     }
 
+    /**
+     Get results from endpoint, a collection of HydraObject
+
+     - Parameter hydraObject: an object Type conform to protocol HydraObject
+     - Parameter parameters: Optional dictionary with url parameters
+     - Parameter completion: Result from task
+     */
     public func get<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<[T]>) -> ()) {
         var urlComponents = URLComponents(string: endpoint + hydraObject.hydraPoint())
         urlComponents?.queryItems = []
@@ -45,9 +77,16 @@ public class Hydra {
             } catch let errorjson {
                 print(errorjson)
             }
-        }.resume()
+            }.resume()
     }
 
+    /**
+     Get one result from endpoint
+
+     - Parameter hydraObject: an object Type conform to protocol HydraObject
+     - Parameter id: id of ressource
+     - Parameter completion: Result from task
+     */
     public func get<T:HydraObject>(_ hydraObject:T.Type, id: Int,  completion: @escaping (Result<T>) -> ()) {
         let url = URL(string: endpoint + hydraObject.hydraPoint() + "/" + String(id))
 
@@ -69,6 +108,6 @@ public class Hydra {
                 completion(Result.failure(errorjson))
                 print(errorjson)
             }
-        }.resume()
+            }.resume()
     }
 }

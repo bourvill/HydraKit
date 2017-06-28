@@ -4,8 +4,7 @@
 //
 //  Created by maxime marinel on 26/06/2017.
 //
-
-import UIKit
+import Foundation
 
 extension URLRequest {
     enum httpMethod: String {
