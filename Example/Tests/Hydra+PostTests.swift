@@ -14,7 +14,8 @@ class HydraPostTests: XCTestCase {
         let session = MockURLSession()
         let dataTask = Task()
         session.nextDataTask = dataTask
-        session.nextData = "{\"@id\":\"/api/hydraObjs/7508\",\"@type\":\"hydraObjs\"}".data(using: .utf8)
+        let path = Bundle(for: type(of: self)).path(forResource: "single", ofType: "json")
+        session.nextData = try! String(contentsOfFile: path!).data(using: .utf8)
         let hydra: Hydra = Hydra(endpoint: "http://url.test", urlSession: session)
 
         let expect = expectation(description: "Post completion")
@@ -23,7 +24,7 @@ class HydraPostTests: XCTestCase {
             expect.fulfill()
             switch results {
             case .success(let results):
-                XCTAssertEqual(results.hydraId, "/api/hydraObjs/7508")
+                XCTAssertEqual(results.members.first?.hydraId, "/api/annonces/10907")
             case .failure(_):
                 //never call
                 XCTAssertTrue(false)
@@ -33,7 +34,7 @@ class HydraPostTests: XCTestCase {
         let json = try! JSONSerialization.jsonObject(with: session.lastBody!, options: []) as! [String:Any]
 
         XCTAssertEqual(json["name"] as! String, "my name")
-        XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/hydraObjs")
+        XCTAssertEqual(session.lastURL?.absoluteString, "http://url.test/api/annonces")
         XCTAssertEqual(session.lastMethod, "POST")
         XCTAssertTrue(dataTask.resumeCall)
 

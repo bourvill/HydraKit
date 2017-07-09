@@ -6,6 +6,37 @@
 //
 import Foundation
 
+public class Results<T:HydraObject> {
+    var hydraObject: T.Type
+    var members: [T] = []
+    var firstPage: Int = 1
+    var nextPage: Int = 1
+    var lastPage: Int =  0
+    var currentPage: Int = 1
+    var totalItems: Int = 0
+
+    init(_ hydraObject:T.Type, json: [String: Any]) {
+        self.hydraObject = hydraObject
+        
+        if (json["@type"] as! String) == "hydra:Collection" {
+            loadCollection(json)
+        }
+        if (json["@type"] as! String) == hydraObject.hydraType() {
+            loadSingle(json)
+        }
+    }
+
+    private func loadCollection(_ json: [String: Any]) {
+        for member in json["hydra:member"] as! [[String:Any]] {
+            members.append(hydraObject.init(hydra: member))
+        }
+    }
+
+    private func loadSingle(_ json: [String: Any]) {
+        members.append(hydraObject.init(hydra: json))
+    }
+}
+
 public class Hydra {
 
     /**
@@ -13,8 +44,8 @@ public class Hydra {
      - success: return the T
      - failure: return error
      */
-    public enum Result<T> {
-        case success(T)
+    public enum Result<T:HydraObject> {
+        case success(Results<T>)
         case failure(Error)
     }
 
@@ -50,7 +81,7 @@ public class Hydra {
      - Parameter parameters: Optional dictionary with url parameters
      - Parameter completion: Result from task
      */
-    public func get<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<[T]>) -> ()) {
+    public func get<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> ()) {
         var urlComponents = URLComponents(string: endpoint + hydraObject.hydraPoint())
         urlComponents?.queryItems = []
         for (key,value) in parameters {
@@ -73,7 +104,8 @@ public class Hydra {
                 for member in json["hydra:member"] as! [[String:Any]] {
                     members.append(hydraObject.init(hydra: member))
                 }
-                completion(Result.success(members))
+
+                completion(Result.success(Results<T>(hydraObject, json: json)))
             } catch let errorjson {
                 print(errorjson)
             }
@@ -101,9 +133,8 @@ public class Hydra {
             }
 
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                let result = Result.success(hydraObject.init(hydra: json))
-                completion(result)
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]                
+                completion(Result.success(Results<T>(hydraObject, json: json)))
             } catch let errorjson {
                 completion(Result.failure(errorjson))
                 print(errorjson)

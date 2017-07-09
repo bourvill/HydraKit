@@ -20,4 +20,8 @@ public protocol HydraObject {
      This method define the endpoint api to retrieve ressource
      */
     static func hydraPoint() -> String
+    /**
+     This method define the Type of the ressource "@type"
+     */
+    static func hydraType() -> String
 }

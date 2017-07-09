@@ -1,0 +1,214 @@
+{
+    "@context": "/api/contexts/Annonce",
+    "@id": "/api/annonces",
+    "@type": "hydra:Collection",
+    "hydra:member": [
+                     {
+                     "@id": "/api/annonces/6883",
+                     "@type": "Annonce",
+                     "nom": "viroulaud",
+                     "title": "aw 308"
+                     },
+                     {
+                     "@id": "/api/annonces/7052",
+                     "@type": "Annonce",
+                     "nom": "Renaut david",
+                     "title": "Famas f1 plus ascessoire"
+                     },
+                     {
+                     "@id": "/api/annonces/7508",
+                     "@type": "Annonce",
+                     "nom": "OBRIEN",
+                     "title": "Sniper MB-01 état neuf"
+                     },
+                     {
+                     "@id": "/api/annonces/7528",
+                     "@type": "Annonce",
+                     "nom": "PICARD",
+                     "title": "Famas F1 AEG"
+                     },
+                     {
+                     "@id": "/api/annonces/7529",
+                     "@type": "Annonce",
+                     "nom": "PICARD",
+                     "title": "Vends Sniper Mossberg Spring Bolt Action"
+                     },
+                     {
+                     "@id": "/api/annonces/7530",
+                     "@type": "Annonce",
+                     "nom": "PICARD",
+                     "title": "Vends Sniper Spring AW 308"
+                     },
+                     {
+                     "@id": "/api/annonces/7562",
+                     "@type": "Annonce",
+                     "nom": "Yann",
+                     "title": "Lot airsoft répliques et équipement"
+                     },
+                     {
+                     "@id": "/api/annonces/7786",
+                     "@type": "Annonce",
+                     "nom": "Rémi",
+                     "title": "MP7 A1"
+                     },
+                     {
+                     "@id": "/api/annonces/7985",
+                     "@type": "Annonce",
+                     "nom": "Samuel",
+                     "title": "Ak 47 spenaze"
+                     },
+                     {
+                     "@id": "/api/annonces/8016",
+                     "@type": "Annonce",
+                     "nom": "Alexis",
+                     "title": "Replique AK47 tactical"
+                     },
+                     {
+                     "@id": "/api/annonces/8061",
+                     "@type": "Annonce",
+                     "nom": "Doug",
+                     "title": "M16 carbine dst"
+                     },
+                     {
+                     "@id": "/api/annonces/8130",
+                     "@type": "Annonce",
+                     "nom": "ludo",
+                     "title": "transform4 ICS"
+                     },
+                     {
+                     "@id": "/api/annonces/8131",
+                     "@type": "Annonce",
+                     "nom": "ludo",
+                     "title": "we g33 glock"
+                     },
+                     {
+                     "@id": "/api/annonces/8757",
+                     "@type": "Annonce",
+                     "nom": "Nicolas Gremy",
+                     "title": "Réplique d'airsoft"
+                     },
+                     {
+                     "@id": "/api/annonces/8764",
+                     "@type": "Annonce",
+                     "nom": "Cuenca",
+                     "title": "M4"
+                     },
+                     {
+                     "@id": "/api/annonces/8871",
+                     "@type": "Annonce",
+                     "nom": "Rémi",
+                     "title": "SAR 10"
+                     },
+                     {
+                     "@id": "/api/annonces/9200",
+                     "@type": "Annonce",
+                     "nom": "peyssonnel",
+                     "title": "sti tac master full metal"
+                     },
+                     {
+                     "@id": "/api/annonces/9442",
+                     "@type": "Annonce",
+                     "nom": "Ducrozet valentin",
+                     "title": "Réplique blaser R93 KA"
+                     },
+                     {
+                     "@id": "/api/annonces/9610",
+                     "@type": "Annonce",
+                     "nom": "Mathieu",
+                     "title": "G&G cm18"
+                     },
+                     {
+                     "@id": "/api/annonces/10085",
+                     "@type": "Annonce",
+                     "nom": "Thai van lang",
+                     "title": "M4 Red hot + accessoire"
+                     },
+                     {
+                     "@id": "/api/annonces/10097",
+                     "@type": "Annonce",
+                     "nom": "BRIDAY",
+                     "title": "Répliques et équipements"
+                     },
+                     {
+                     "@id": "/api/annonces/10365",
+                     "@type": "Annonce",
+                     "nom": "MASSA01",
+                     "title": "réplique dragunnof"
+                     },
+                     {
+                     "@id": "/api/annonces/10403",
+                     "@type": "Annonce",
+                     "nom": "DUMONT",
+                     "title": "G36C"
+                     },
+                     {
+                     "@id": "/api/annonces/10455",
+                     "@type": "Annonce",
+                     "nom": "Pech",
+                     "title": "Ak47 avec accessoires et équipements"
+                     },
+                     {
+                     "@id": "/api/annonces/10510",
+                     "@type": "Annonce",
+                     "nom": "Lhermenault Thomas",
+                     "title": "vente"
+                     },
+                     {
+                     "@id": "/api/annonces/10534",
+                     "@type": "Annonce",
+                     "nom": "LACROIX",
+                     "title": "FUSIL SNIPER AIRSOFT SAR 10 BULL BARREL METAL NOIR SPRING RAIL 1.6 JOULE+BIPIEDS+LUNETTE 4X40+FILETCAMOUFLAGE MOSSY FOSCO"
+                     },
+                     {
+                     "@id": "/api/annonces/10633",
+                     "@type": "Annonce",
+                     "nom": "steve",
+                     "title": "débarras"
+                     },
+                     {
+                     "@id": "/api/annonces/10824",
+                     "@type": "Annonce",
+                     "nom": "thomas",
+                     "title": "vend tout mon matériel airsoft G4/M4"
+                     },
+                     {
+                     "@id": "/api/annonces/11351",
+                     "@type": "Annonce",
+                     "nom": "mathieu",
+                     "title": "équipement complet + réplique m4 et M1911"
+                     },
+                     {
+                     "@id": "/api/annonces/11486",
+                     "@type": "Annonce",
+                     "nom": "Julien avante",
+                     "title": "Vend dan weson 2.5"
+                     }
+                     ],
+    "hydra:totalItems": 3945,
+    "hydra:view": {
+        "@id": "/api/annonces?page=1",
+        "@type": "hydra:PartialCollectionView",
+        "hydra:first": "/api/annonces?page=1",
+        "hydra:last": "/api/annonces?page=132",
+        "hydra:next": "/api/annonces?page=2"
+    },
+    "hydra:search": {
+        "@type": "hydra:IriTemplate",
+        "hydra:template": "/api/annonces{?nom,isModerated}",
+        "hydra:variableRepresentation": "BasicRepresentation",
+        "hydra:mapping": [
+                          {
+                          "@type": "IriTemplateMapping",
+                          "variable": "nom",
+                          "property": "nom",
+                          "required": false
+                          },
+                          {
+                          "@type": "IriTemplateMapping",
+                          "variable": "isModerated",
+                          "property": "isModerated",
+                          "required": false
+                          }
+                          ]
+    }
+}

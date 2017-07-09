@@ -33,7 +33,7 @@ extension Hydra {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                completion(Result.success(hydraObject.init(hydra: json)))
+                completion(Result.success(Results<T>(hydraObject, json: json)))
             } catch let errorjson {
                 print(errorjson)
             }

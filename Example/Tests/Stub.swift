@@ -17,7 +17,11 @@ class HydraObj: HydraObject {
     }
 
     static func hydraPoint() -> String {
-        return "/api/hydraObjs"
+        return "/api/annonces"
+    }
+
+    static func hydraType() -> String {
+        return "Annonce"
     }
 }
 
