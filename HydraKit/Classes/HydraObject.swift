@@ -15,7 +15,7 @@ public protocol HydraObject {
      In this method you define how your object will be hydrated
      Typically the dictionnary is the "hydra:member" json
      */
-    init(hydra:[String: Any])
+    init(hydra: [String: Any])
     /**
      This method define the endpoint api to retrieve ressource
      */

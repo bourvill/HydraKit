@@ -13,7 +13,7 @@ public class Hydra {
      - success: return the T
      - failure: return error
      */
-    public enum Result<T:HydraObject> {
+    public enum Result<T: HydraObject> {
         case success(Results<T>)
         case failure(Error)
     }
@@ -50,13 +50,13 @@ public class Hydra {
      - Parameter parameters: Optional dictionary with url parameters
      - Parameter completion: Result from task
      */
-    public func get<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> ()) {
+    public func get<T: HydraObject>(_ hydraObject: T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> Void) {
         var urlComponents = URLComponents(string: endpoint + hydraObject.hydraPoint())
         urlComponents?.queryItems = []
-        for (key,value) in parameters {
+        for (key, value) in parameters {
             urlComponents?.queryItems?.append(URLQueryItem(name: key, value: (String(describing: value))))
         }
-        urlSession.dataTask(with: urlComponents!.url!) { data, response, error in
+        urlSession.dataTask(with: urlComponents!.url!) { data, _, error in
             guard error == nil else {
                 completion(Result.failure(error!))
                 return
@@ -68,13 +68,13 @@ public class Hydra {
             }
 
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                var members: [T] = []
-                for member in json["hydra:member"] as! [[String:Any]] {
-                    members.append(hydraObject.init(hydra: member))
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    var members: [T] = []
+                    for member in (json["hydra:member"] as? [[String:Any]]) ?? [] {
+                        members.append(hydraObject.init(hydra: member))
+                    }
+                    completion(Result.success(Results<T>(hydraObject, json: json)))
                 }
-
-                completion(Result.success(Results<T>(hydraObject, json: json)))
             } catch let errorjson {
                 print(errorjson)
             }
@@ -88,10 +88,10 @@ public class Hydra {
      - Parameter id: id of ressource
      - Parameter completion: Result from task
      */
-    public func get<T:HydraObject>(_ hydraObject:T.Type, id: Int,  completion: @escaping (Result<T>) -> ()) {
+    public func get<T: HydraObject>(_ hydraObject: T.Type, id: Int, completion: @escaping (Result<T>) -> Void) {
         let url = URL(string: endpoint + hydraObject.hydraPoint() + "/" + String(id))
 
-        urlSession.dataTask(with: url!) { data, response, error in
+        urlSession.dataTask(with: url!) { data, _, error in
             guard error == nil else {
                 completion(Result.failure(error!))
                 return
@@ -102,8 +102,9 @@ public class Hydra {
             }
 
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]                
-                completion(Result.success(Results<T>(hydraObject, json: json)))
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    completion(Result.success(Results<T>(hydraObject, json: json)))
+                }
             } catch let errorjson {
                 completion(Result.failure(errorjson))
                 print(errorjson)

@@ -7,7 +7,7 @@
 import Foundation
 
 extension URLRequest {
-    enum httpMethod: String {
+    enum HttpMethod: String {
        case POST
     }
 }

@@ -14,14 +14,18 @@ extension Hydra {
      - Parameter parameters: dictonary needed to create resource
      - Parameter completion: Result from task
      */
-    public func post<T:HydraObject>(_ hydraObject:T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> ()) {
+    public func post<T: HydraObject>(_ hydraObject: T.Type, parameters: [String:Any] = [:], completion: @escaping (Result<T>) -> Void) {
         let url = URL(string: endpoint + hydraObject.hydraPoint())
-        
+
         var request: URLRequest = URLRequest(url: url!)
-        request.httpMethod = URLRequest.httpMethod.POST.rawValue
-        request.httpBody = try! JSONSerialization.data(withJSONObject: parameters, options: [])
-        
-        urlSession.dataTask(with: request) { data, response, error in
+        request.httpMethod = URLRequest.HttpMethod.POST.rawValue
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
+        } catch {
+            //@todo error
+        }
+
+        urlSession.dataTask(with: request) { data, _, error in
             guard error == nil else {
                 completion(Result.failure(error!))
                 return
@@ -30,12 +34,13 @@ extension Hydra {
                 print("Data is empty")
                 return
             }
-            
+
             do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
-                completion(Result.success(Results<T>(hydraObject, json: json)))
+                if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
+                    completion(Result.success(Results<T>(hydraObject, json: json)))
+                }
             } catch let errorjson {
-                print(errorjson)
+                completion(Result.failure(errorjson))
             }
         }.resume()
     }

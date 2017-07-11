@@ -1,0 +1,7 @@
+excluded:
+  - Pods
+  - Example
+line_length: 140
+identifier_name:
+  excluded:
+    - id
